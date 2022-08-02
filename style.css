@@ -1,0 +1,263 @@
+:root{
+    --verde-- : #cfc;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 15.5px;
+    }
+}
+/* ------------------------------------------------- */
+header{
+    padding: 1em 2em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    background: var(--verde--);
+}
+header > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header > div i{
+    font-size: .7em;
+}
+header > div > img{
+    width: 120px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1150px){
+    header > div{
+        justify-content: center;
+    }
+    
+}
+/* ------------------------------------------------- */
+
+.container{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    border-left: var(--verde--) solid 5px;
+    border-right: var(--verde--) solid 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ------------------------------------------------- */
+.nav{
+    width: 100%;
+    font-size: 1.2em;
+}
+.nav > nav{
+    padding-top: 2em;
+    width: 100%;
+}
+.nav > nav > li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav > nav > li > ul >a{
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    padding: .9em 1.2em;
+    transition: box-shadow .2s ease ;
+}
+
+.nav > nav > li > ul >a:hover{
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+}
+
+.navActivo{
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+}
+
+/* --------------------RULETA----------------------------- */
+
+.ruleta > button{
+    width: 90%;
+    font-size: 1.5em;
+}
+
+.ru_camiar{
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    height: 450px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    /*border: 3px solid var(--verde--);*/
+    margin: 1em auto;
+    border-radius: 10px;
+    transition: background .2s ease-in;
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+}
+
+.prenderYapagra{
+    animation: prenderYapagra .7s ease infinite;
+}
+@keyframes prenderYapagra {
+    0%{
+        transform: translate(-2000%, 700%) scale(0) rotate(60deg);
+    }
+    50%{
+        transform: translateX(0) scale(1) rotate(0deg);
+    }
+    100%{
+        transform: translate(2000%, 700%) scale(0) rotate(-60deg);
+    }
+}
+
+
+
+/* ------------------------------------------------- */
+
+.titulos_gana{
+    margin: 0;
+    border-radius: 10px;
+    font-size: 1em;
+    text-shadow: 0 5px 5px var(--verde--), 0 5px var(--verde--), 5px 5px 5px var(--verde--);
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+}
+.borde_derecho{
+    position: relative;
+    border-right: 5px solid var(--verde--);
+}
+
+
+.titulos_gana > div{
+    font-size: 1.25em;
+    padding: 1em .4em;
+}
+
+.all_gandores_people{
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+.all_gandores_people > div{
+    margin: 3em 0;
+    border-radius: 10px;
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+    transition: .3s ease;
+    transform: ;
+}
+.a{
+    transform: rotate(4deg) scale(.8);
+}
+.all_gandores_peopleDiv_delotrolado{
+    transform: rotate(-4deg) scale(.8);
+}
+
+
+.all_gandores_people > div:hover{
+    transition: .1s ease;
+    transform: scale(1.02);
+}
+.all_gandores_people > div p{
+    margin: 0;
+    padding: 1.2em 0;
+}
+
+.all_gandores_peopleDivActivo{
+    transform: rotate(0deg) scale(1) !important;
+}
+
+
+.ver_los_gandores_clic{
+    margin: 2em 0;
+    font-size: 1.3em;
+}
+
+
+
+.all_gandores_people .row div{
+    height: auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* ----------------------ganador --------------------------- */
+.blur{
+    filter: blur(5px);
+}
+
+.ganador{
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    text-align: center;
+    transition: .1s ease;
+}
+.ganadorActivo{
+    transform: scale(1);
+}
+.ganador >div{
+    width: 50%;
+    height: 65vh;
+    background: rgba(2555, 2555, 2555);
+    box-shadow:  -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ganador h2{
+    width: 100%;
+}
+
+.ganador, .ganador button{
+    text-transform: uppercase;
+}
+.ganador button{    
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+.ganador input{
+    margin: auto;
+    width: 90%;
+    font-size: .6em;
+}
+
+@media screen and (max-width: 900px){
+    .ganador >div{
+        width: 80%;
+    }
+}
+
+/* ----------------------ganador --------------------------- */
+
+
+
+
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2em 2em;
+    text-align: center;
+    background: var(--verde--);
+    font-size: 1.2em;
+    padding-top: 3.5em;
+}
+
+
+
+
+

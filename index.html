@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="escudo.jpg" type="image/x-icon">
+    <title>Unidad Educativa Fiscal Quince de Octubre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Rifa Informática 2022 de la Unidad Educativa Fiscal Quince de Octubre. Página Creado por LEOPOLDO MIQUEL MUÑIZ RIVAS">
+</head>
+<body>
+    <script>
+        localStorage.getItem("ganadores") ? false : localStorage.setItem("ganadores", "[]")
+    </script>
+    <div class="all">
+        <header>
+            <div>
+                <h1>
+                    Unidad Educativa Fiscal Quince de Octubre
+                    <br>
+                    <i>Rifa Informática 2022</i>
+                </h1>
+                <img src="escudo.jpg" alt="">
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="nav">
+                        <nav>
+                            <li>
+                                <ul><a href="#/" class="navActivo rutas">Rifa</a></ul>
+                                <ul><a href="#/ga" class="rutas">Ganadores!!</a></ul> 
+                            </li>
+                        </nav>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contenido">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <p>
+                Creado por <b>LEOPOLDO MIQUEL MUÑIZ RIVAS</b> 
+                <br>
+                <br>
+                Derechos reservados Unidad Educativa Fiscal  Quince de Octubre.
+            </p>
+        </footer>
+    </div>
+
+    
+    <div class="ganador">
+        <div>
+            <h2 class="aler_h2"></h2>
+            <button class="btn btn-outline-dark aler_btn btn_gua_gana"></button>
+        </div>
+    </div>
+    <script src="rutas.js" type="module"></script>
+</body>
+</html>
